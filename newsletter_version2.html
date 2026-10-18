@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter - Phiên bản 2 | Tím và Cam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #452B63;
+      --secondary-color: #F08A5D;
+      --accent-color: #F9EDC9;
+      --text-color: #30243D;
+      --light-bg-color: #FFF9F1;
+      --darker-primary-color: #2D1B43;
+    }
+    body { background: var(--light-bg-color); color: var(--text-color); font-family: Arial, sans-serif; }
+    .newsletter-header { background: var(--primary-color); color: white; }
+    .brand-mark { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--secondary-color); color:var(--primary-color); font-weight:800; font-size:1.3rem; }
+    .eyebrow { color: var(--secondary-color); font-weight:700; letter-spacing:.12em; text-transform:uppercase; font-size:.8rem; }
+    .hero { background:linear-gradient(125deg, #452B63, #76528B); color:white; border-radius:24px; overflow:hidden; }
+    .hero-art { min-height:210px; display:grid; place-items:center; background:radial-gradient(circle at 55% 45%, var(--secondary-color), transparent 48%); }
+    .board { width:min(300px,90%); background:#FFF9F1; border-radius:14px; padding:14px; transform:rotate(-3deg); box-shadow:0 15px 35px #20142c55; }
+    .board-top { height:13px; width:44%; background:var(--secondary-color); border-radius:6px; margin-bottom:12px; }
+    .task { height:34px; background:var(--accent-color); border-radius:7px; margin:8px 0; border-left:4px solid var(--primary-color); }
+    .section-label { color:var(--primary-color); font-weight:800; }
+    .feature-card { border:1px solid #F1DDC8; border-radius:16px; background:white; height:100%; }
+    .feature-icon { width:48px; height:48px; display:grid; place-items:center; background:var(--accent-color); color:var(--primary-color); border-radius:14px; font-size:1.4rem; }
+    .btn-custom { background:var(--secondary-color); border-color:var(--secondary-color); color:#2D1B43; font-weight:700; border-radius:999px; padding:.75rem 1.4rem; }
+    .btn-custom:hover { background:var(--accent-color); border-color:var(--accent-color); color:var(--text-color); }
+    .newsletter-footer { background:#F9EDC9; border-top:4px solid var(--secondary-color); }
+    a { color:var(--primary-color); }
+  </style>
+</head>
+<body>
+  <header class="newsletter-header py-3">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+      <div class="d-flex align-items-center gap-2"><span class="brand-mark">T</span><strong class="fs-4">trello<span style="color:var(--secondary-color)">.</span></strong></div>
+      <span class="small d-none d-sm-inline">BẢN TIN SẢN PHẨM & NĂNG SUẤT</span>
+      <a class="text-white small" href="#footer">Liên hệ</a>
+    </div>
+  </header>
+  <main class="container py-4 py-lg-5">
+    <section class="hero p-4 p-lg-5 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <div class="eyebrow mb-3">Ý tưởng lớn bắt đầu từ việc nhỏ</div>
+          <h1 class="display-5 fw-bold mb-3">Tạo không gian cho những ý tưởng tốt.</h1>
+          <p class="lead mb-4">Tập hợp kế hoạch, trao đổi cùng đồng đội và biến những dự định còn dang dở thành kết quả có thể nhìn thấy.</p>
+          <a class="btn btn-custom" href="#features">Xem các gợi ý <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="col-lg-5 hero-art" aria-label="Minh họa bảng công việc">
+          <div class="board"><div class="board-top"></div><div class="task"></div><div class="task" style="width:82%"></div><div class="task" style="width:92%"></div><div class="task" style="width:65%"></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center mb-4">
+      <p class="section-label text-uppercase small mb-2">Góc cảm hứng</p>
+      <h2 class="fw-bold">Thiết kế nhịp làm việc phù hợp với bạn</h2>
+      <p class="text-secondary mx-auto" style="max-width:650px">Một vài thói quen đơn giản giúp công việc bớt rối và các cuộc trao đổi đi đúng trọng tâm.</p>
+    </section>
+    <section id="features" class="row g-4 mb-5">
+      <div class="col-md-4"><article class="feature-card p-4"><div class="feature-icon mb-3">✓</div><h3 class="h5 fw-bold">Bắt đầu từ mục tiêu</h3><p class="mb-0">Viết rõ kết quả mong muốn trước khi bắt tay vào việc để cả nhóm cùng hiểu đích đến.</p></article></div>
+      <div class="col-md-4"><article class="feature-card p-4"><div class="feature-icon mb-3">↗</div><h3 class="h5 fw-bold">Chia sẻ tiến độ</h3><p class="mb-0">Cập nhật ngắn gọn những gì đã xong, việc đang làm và điều cần hỗ trợ.</p></article></div>
+      <div class="col-md-4"><article class="feature-card p-4"><div class="feature-icon mb-3">✦</div><h3 class="h5 fw-bold">Giữ nhịp bền vững</h3><p class="mb-0">Để khoảng trống cho nghỉ ngơi và sáng tạo, thay vì cố lấp kín mọi thời gian trong ngày.</p></article></div>
+    </section>
+    <section class="p-4 p-lg-5 text-center rounded-4" style="background:var(--accent-color)">
+      <h2 class="fw-bold">Một thay đổi nhỏ, một tuần khác biệt</h2>
+      <p class="mb-4">Chọn một thói quen dễ duy trì và bắt đầu ngay hôm nay.</p>
+      <a class="btn btn-custom" href="https://trello.com/" target="_blank" rel="noreferrer">Khám phá Trello</a>
+    </section>
+  </main>
+  <footer id="footer" class="newsletter-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div><strong class="fs-5">trello.</strong><p class="small mb-0">Tổ chức công việc. Tiến gần mục tiêu.</p></div>
+      <div class="small">Bạn nhận được email này vì quan tâm đến năng suất làm việc.<br><a href="mailto:hello@example.com">Liên hệ</a> · <a href="#">Hủy đăng ký</a></div>
+      <div class="small">© 2026 Newsletter Demo</div>
+    </div>
+  </footer>
+</body>
+</html>
